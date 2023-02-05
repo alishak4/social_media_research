@@ -8,5 +8,23 @@
 <body>
     <h1> Instagram Research </h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas tenetur voluptatem impedit atque repellat sapiente quasi eaque deserunt nemo minus animi consequuntur laborum itaque dolore, optio quo qui officia. Ducimus.</p> 
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '3361542310769556',
+            xfbml      : true,
+            version    : 'v16.0'
+          });
+          FB.AppEvents.logPageView();
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
 </body>
 </html>
